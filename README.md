@@ -14,7 +14,7 @@ Used HTML & CSS
 
 👁️Getting Started 
 
-To visit this project: https://jovannydp.github.io/CSS-Tarea-1---Header-Spa-Beauty/
+To visit this project: https://jovannydp.github.io/CSS-Tarea-3-Modern-Art-Gallery/ 
 
 
 📌 Notes 
