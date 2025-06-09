@@ -1,0 +1,197 @@
+.header {
+    margin-bottom: 200px;
+    width: 100%;
+
+    @include breakpoint(tablet) {
+            position: relative;
+            margin-bottom: 50px;
+        }
+    @include breakpoint(tablet) {
+        position: relative;
+    }
+    @include breakpoint(desktopxl) {
+        margin-bottom: 100px;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            //width: 35%;
+            width: 30%;
+            height: 93.4%;
+            background-color: $black;
+            z-index: -1;
+        }
+    }
+    
+    &__img {
+        width: 1100px;
+        height: 704px;
+        object-fit: cover;
+        margin-bottom: 80px;
+        @include breakpoint(tablet) {
+            width: 80%;
+            height: auto;
+            object-fit: contain;
+        }
+        @include breakpoint(desktopxl) {
+            //width: 40%;
+            //height: auto;
+            width: auto;
+            height: 1200px;
+            object-fit: contain;
+            transform: translate(50%, 0);
+        }
+    }
+
+    &__info {   
+        margin-left: 60px;
+        margin-right: 60px; 
+
+        @include breakpoint(tablet) {
+            position: absolute;
+            left: 480px;
+            //top: 200px;
+            //right: -215px;
+        }
+           
+            &__logo img {
+                //max-width: 800px;
+                //min-width: 500px;
+                width: 750px;;
+                //margin-left: 40px;
+                margin-bottom: 70px;
+                @include breakpoint(tablet) {
+                    width: 500px;
+                    //position: absolute;
+                }
+                //@include breakpoint(desktopxl) {
+                position: absolute;
+                top: 100px;
+                right: 750px;
+                width: 50%;
+                //} 
+                @include breakpoint(desktopxl) {
+                    display: none;
+                }        
+            }
+            &__logo--negative img {
+                display: block;
+                display: none;
+                @include breakpoint(desktopxl) {
+                    display: block;
+                    position: absolute;
+                    top: 160px;
+                    right: 700px;
+                    //min-width: 500px;
+                    //width: 50%;
+                    width: 520px;
+                } 
+            }
+            &__text {
+                font-size: 53px;
+                //margin-left: 35px;
+                //margin-right: 35px;
+                margin-bottom: 110px;
+                font-family: $secondary-font;
+                font-weight: 200;
+                color: $black;
+                //max-width: 1000px;
+                width: 1000px;
+                
+                @include breakpoint(tablet) {
+                    font-size: 26px;
+                    margin-right: 0;
+                    width: 500px;
+                    margin-bottom: 50px;
+                }
+                @include breakpoint (desktopxl) {
+                    position: absolute;
+                    top: 215px;
+                    left: 600px;
+                    line-height: 32px;
+                    width: 42%;
+                    font-size: 25px;
+                }
+            }
+            &__button {
+                display: inline-block;
+                margin-left: 40px;
+
+                @include breakpoint(tablet){
+                    position: absolute;
+                    left: -50px;
+                }
+
+                @include breakpoint(desktopxl) {
+                    position: absolute;
+                    top: 420px;
+                    //left: 790px;
+                    left: 600px;
+                    width: 80%;
+                    //font-size: 20px;
+                }
+                a {
+                    display: inline-flex;
+                    align-items: center;
+                    text-decoration: none;
+                    color: $white;
+                    span {
+                        font-size: 60px;
+                        padding: 40px 70px;
+                        background-color: $black;
+                        white-space: nowrap;
+                        display: flex;
+                        //justify-content: space-around;
+                        align-items: center;
+                        height: auto;
+                        &:hover {
+                            background-color: $orange;
+                        }
+                         @include breakpoint(tablet) {
+                            font-size: 35px;
+                            padding: 19px 45px;
+                         }
+                         @include breakpoint (desktopxl) {
+                            font-size: 20px;
+                            padding: 20px 30px;
+                         }
+                    }
+
+                    img {
+                        background-color: $orange;
+                        height: 153px;
+                        max-width: 110px;
+                        padding: 0px 40px;
+                        object-fit: contain; 
+                        &:hover {
+                            background-color: $black;
+                        }
+                        @include breakpoint(tablet) {
+                            height: 80px;
+                            max-width: 55px;
+                            padding: 0px 20px;
+                        }
+                        @include breakpoint(desktopxl) {
+                            max-width: 50px;
+                            padding: 0px 20px;
+                            height: 64px;
+                        }
+                    }
+                }
+                
+            }
+            @include breakpoint(tablet) {
+                position: absolute;
+                top: 200px;
+                right: 60px;
+                width: 50%;
+            }
+            @include breakpoint(desktopxl) {
+                position: absolute;
+                top: 100px;
+                right: -300px;
+                width: 50%;
+            }
+    }
+}

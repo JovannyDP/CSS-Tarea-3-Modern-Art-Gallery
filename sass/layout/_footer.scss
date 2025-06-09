@@ -1,0 +1,92 @@
+.footer {
+    background-color: $black;
+    width: 1100px;
+    margin: 0;
+    padding: 110px 80px;
+    @include breakpoint(tablet) {
+        padding: 80px 50px;
+    }
+     @include breakpoint(desktopxl) {
+        width: 100%;
+     }
+    
+    .container {
+        @include breakpoint(tablet) {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        }
+    }
+    
+    &__text {
+        
+        @include breakpoint(tablet) {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-right: 160px;
+        }
+
+        @include breakpoint(desktopxl) {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-right: 500px;
+        }
+
+        img {
+            width: 450px;
+            margin-bottom: 80px;
+            @include breakpoint(tablet) {
+                width: 150px;
+                margin-bottom: 0;
+            }
+            @include breakpoint(desktopxl) {
+                margin-left: 150px;
+            }
+        }
+        p {
+            font-family: $secondary-font;
+            font-size: 45px;
+            font-weight: 200;
+            color: $white;
+            width: 95%;
+            line-height: 60px;
+            margin-bottom: 80px;
+            @include breakpoint(tablet) {
+                font-size: 20px;
+                line-height: 30px;
+                width: 50%;
+                margin-bottom: 0;
+            }
+             @include breakpoint(desktopxl) {
+                font-size: 20px;
+                line-height: 25px;
+                width: 50%;
+             }
+        }
+    }
+    &__social {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 50px;
+        @include breakpoint(tablet) {
+            margin-left: 50px;
+            gap: 30px;
+        }
+         @include breakpoint(desktopxl) {
+            margin-right: 150px;
+            
+         }
+        img {
+            width: 50px;
+             @include breakpoint(tablet) {
+                width: 30px;
+             }
+             @include breakpoint(desktopxl) {
+                width: 20px;              
+             }
+        }
+    }
+}
